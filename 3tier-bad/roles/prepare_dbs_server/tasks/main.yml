@@ -1,0 +1,10 @@
+- name: ensure latest postgres is present.
+  package:
+    name: postgresql-server
+    state: latest
+
+- name: enable postgres service and start
+  service:
+    name: postgresql
+    enabled: yes
+    state: started

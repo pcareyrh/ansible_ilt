@@ -3,4 +3,4 @@
   gather_facts: false
   become: true
   roles:
-    - { role: "./roles/cleaner" }
+    - { role: cleaner }

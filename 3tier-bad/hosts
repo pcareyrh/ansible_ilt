@@ -13,7 +13,7 @@ ansible_ssh_user=ec2-user
 [internal:children]
 frontends
 apps
-appdbs
+dbs
 
 [frontends]
 ## These are the frontends
@@ -24,7 +24,7 @@ frontend1 ansible_host=frontend1."{{ GUID }}".internal
 app1 ansible_host=app1."{{ GUID }}".internal
 app2 ansible_host=app2."{{ GUID }}".internal
 
-[appdbs]
+[dbs]
 ## These are the appdbi(s)
-appdb1 ansible_host=appdb1."{{ GUID }}".internal
+db1 ansible_host=appdb1."{{ GUID }}".internal
 

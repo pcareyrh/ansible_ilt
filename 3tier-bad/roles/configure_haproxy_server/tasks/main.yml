@@ -11,5 +11,5 @@
     - "restart HAProxy"
   template: 
     dest: /etc/haproxy/haproxy.cfg
-    src: ./haproxy.cfg.j2
+    src: haproxy.cfg.j2
 

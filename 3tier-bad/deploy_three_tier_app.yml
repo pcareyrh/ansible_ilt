@@ -27,5 +27,6 @@
   gather_facts: false
   become: true
   roles:
-    - { role: prepare_dbs_server, tags: ['prepare_dbs_server']}
-    - { role: configure_dbs_server, tags: ['configure_dbs_server']}
+    - { role: openmicroscopy.postgresql }
+#    - { role: prepare_dbs_server, tags: ['prepare_dbs_server']}
+#    - { role: configure_dbs_server, tags: ['configure_dbs_server']}
